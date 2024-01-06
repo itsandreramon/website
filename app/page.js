@@ -6,7 +6,7 @@ export default function Home() {
     <main className="min-h-screen flex flex-col justify-between">
       <Navigation />
       <div className="mx-24 max-w-min">
-        <p className="bg-clip-text text-transparent text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+        <p className="text-4xl bg-clip-text text-transparent font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
           Content
         </p>
       </div>

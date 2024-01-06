@@ -1,33 +1,38 @@
+import FooterLink from "./FooterLink";
+
 export default function Footer({ children }) {
   return (
     <div className="p-24">
       <div className="flex flex-row justify-between">
         <div className="basis-1/2">
-          <p className="text-xs font-bold text-slate-500">connect</p>
+          <p className="text-sm font-bold text-gray-500">connect</p>
           <ul>
             <li>
-              <a className="text-sm font-bold hover:underline">github</a>
+              <FooterLink title="GitHub" />
             </li>
             <li>
-              <a className="text-sm font-bold hover:underline">linkedin</a>
+              <FooterLink title="LinkedIn" />
             </li>
           </ul>
         </div>
         <div className="basis-1/2">
-          <p className="text-xs font-bold text-slate-500">other</p>
+          <p className="text-sm font-bold text-gray-500">other</p>
           <ul>
             <li>
-              <a className="text-sm font-bold hover:underline">imprint</a>
+              <FooterLink title="Imprint" />
             </li>
             <li>
-              <a className="text-sm font-bold hover:underline">privacy</a>
+              <FooterLink title="Privacy" />
             </li>
           </ul>
         </div>
       </div>
-      <p className="text-xs pt-16 font-mono text-slate-500">
-        Copyright © 2024 - All rights reserved
-      </p>
+      <div className="pt-16">
+        <p className="text-xs font-mono text-slate-500">Made in Berlin</p>
+        <p className="text-xs font-mono text-slate-500">
+          Copyright © 2024 - All rights reserved
+        </p>
+      </div>
     </div>
   );
 }
