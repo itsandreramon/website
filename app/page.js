@@ -1,15 +1,22 @@
-import NavigationLink from "./components/NavigationLink";
-import Link from "next/link";
+import { ChevronsRight } from "react-feather";
+import Button from "./components/Button";
+import Image from "next/image";
 
 export default function Home() {
   return (
-      <div className="max-w-xl">
-        <p className="text-4xl text-slate-500 pb-8">Hi, I'm André, currently working at <span className="font-bold text-gray-400">SAP</span> as an <span className="font-bold text-gray-400">Android Developer</span>.</p>
-        <Link href="/about">
-          <button className="border-gray-800 p-2 border-2 rounded-lg hover:border-white transition ease-in-out">
-            <p className="p-2">Learn more</p>
-          </button>
-        </Link>
-      </div>
+    <div className="max-w-xl">
+      <Image
+        src="/avatar.jpg"
+        height="200"
+        width="200"
+        style={{ borderRadius: "50%" }}
+      />
+      <p className="text-4xl text-slate-400 py-12">
+        Hi, I'm André, currently working at{" "}
+        <span className="font-bold text-white">SAP</span> as an{" "}
+        <span className="font-bold text-white">Android Developer</span>.
+      </p>
+      <Button to="/about" title="Learn more" icon={<ChevronsRight />} />
+    </div>
   );
 }

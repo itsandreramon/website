@@ -28,7 +28,9 @@ export default function Footer() {
         </div>
       </div>
       <div className="pt-16">
-        <p className="text-xs font-mono text-slate-500">Made in Berlin with Next.js</p>
+        <p className="text-xs font-mono text-slate-500">
+          Made in Berlin with Next.js
+        </p>
         <p className="text-xs font-mono text-slate-500">
           Copyright © {new Date().getFullYear()} - All rights reserved
         </p>
