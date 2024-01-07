@@ -5,7 +5,7 @@ import avatar from "../public/avatar.jpg";
 
 export default function Home() {
   return (
-    <div className="max-w-xl">
+    <div>
       <Image
         src={avatar}
         height="200"
@@ -13,11 +13,13 @@ export default function Home() {
         placeholder="blur"
         style={{ borderRadius: "50%" }}
       />
-      <p className="text-4xl text-slate-400 py-12">
-        Hi, I'm André, currently working at{" "}
-        <span className="font-bold text-white">SAP</span> as an{" "}
-        <span className="font-bold text-white">Android Developer</span>.
-      </p>
+      <div className="max-w-xl">
+        <p className="text-4xl text-slate-400 py-12">
+          Hi, I'm André, currently working at{" "}
+          <span className="font-bold text-white">SAP</span> as an{" "}
+          <span className="font-bold text-white">Android Developer</span>.
+        </p>
+      </div>
       <Button to="/about" title="Learn more" icon={<ChevronsRight />} />
     </div>
   );
