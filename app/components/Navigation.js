@@ -8,6 +8,7 @@ export default function Navigation({ children }) {
 
   return (
     <div className="lg:p-24 p-8 border-b border-gray-800">
+      {"Desktop Nav"}
       <div className="flex flex-row items-center lg:visible invisible">
         <div className="basis-1/4">
           <p className="font-bold">André Thiele</p>
@@ -20,10 +21,17 @@ export default function Navigation({ children }) {
           <NavigationLink title="Contact" />
         </div>
       </div>
+
+      {"Mobile Nav"}
       <div class="lg:hidden visible">
-        <button className="border-gray-800 border-solid p-2 border-2 rounded-lg">
+        <button className="border-gray-800 border-solid p-2 border-2 rounded-lg" onClick={() => setExpanded(!isExpanded)}>
           Menu
         </button>
+        <ul className={`${isExpanded ? "visible" : "hidden"}`}>
+          <li>Blog</li>
+          <li>Work</li>
+          <li>Contact</li>
+        </ul>
       </div>
     </div>
   );
