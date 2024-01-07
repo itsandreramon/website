@@ -1,4 +1,5 @@
 import FooterLink from "./FooterLink";
+import FooterLinkOutgoing from "./FooterLinkOutgoing";
 
 export default function Footer() {
   return (
@@ -8,10 +9,16 @@ export default function Footer() {
           <p className="text-sm font-bold text-gray-500">connect</p>
           <ul>
             <li>
-              <FooterLink title="GitHub" />
+              <FooterLinkOutgoing
+                to="https://github.com/itsandreramon"
+                title="GitHub"
+              />
             </li>
             <li>
-              <FooterLink title="LinkedIn" />
+              <FooterLinkOutgoing
+                to="https://www.linkedin.com/in/itsandreramon"
+                title="LinkedIn"
+              />
             </li>
           </ul>
         </div>
@@ -19,21 +26,17 @@ export default function Footer() {
           <p className="text-sm font-bold text-gray-500">other</p>
           <ul>
             <li>
-              <FooterLink title="Imprint" />
+              <FooterLink to="/imprint" title="Imprint" />
             </li>
             <li>
-              <FooterLink title="Privacy" />
+              <FooterLink to="/imprint" title="Privacy" />
             </li>
           </ul>
         </div>
       </div>
-      <div className="pt-16">
-        <p className="text-xs font-mono text-slate-500">
-          Made in Berlin with Next.js
-        </p>
-        <p className="text-xs font-mono text-slate-500">
-          Copyright © {new Date().getFullYear()} - All rights reserved
-        </p>
+      <div className="font-mono text-xs text-slate-500 pt-16">
+        <p> Made in Berlin with Next.js</p>
+        <p>Copyright © {new Date().getFullYear()} - All rights reserved</p>
       </div>
     </div>
   );

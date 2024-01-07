@@ -1,14 +1,16 @@
 import { ChevronsRight } from "react-feather";
 import Button from "./components/Button";
 import Image from "next/image";
+import avatar from "../public/avatar.jpg";
 
 export default function Home() {
   return (
     <div className="max-w-xl">
       <Image
-        src="/avatar.jpg"
+        src={avatar}
         height="200"
         width="200"
+        placeholder="blur"
         style={{ borderRadius: "50%" }}
       />
       <p className="text-4xl text-slate-400 py-12">
