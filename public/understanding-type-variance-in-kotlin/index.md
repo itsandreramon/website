@@ -1,0 +1,69 @@
+Understanding type variance in Kotlin
+In this post, I want to give you a clear explanation of type variance in Kotlin. We'll cover the following topics:
+introduction to variance
+invariance, covariance, and contravariance
+declaration-site and use-site variance
+
+Let's dive right in! 🤓
+Introduction to variance
+When talking about variance, you can think about the relation between generic types that share the same base type but have different type arguments. When working with a List<Any>, the base type would be List and the type argument Any. This relation is key to provide type safety in your API.
+An important aspect to keep in mind is that while it's safe to pass a Cat to a function that expects Any, it's not always safe to pass a List<Cat> when a List<Any> is expected. Imagine the following function:
+
+In order for this to compile, you need to specify the type variance on MutableList<Any> because the function may modify the list passed to it. Therefore, the compiler correctly prohibits this.
+If your function expects a non-mutable list, you could safely call any function on its elements because Cat is a subtype of Any. Therefore, every Cat has at least the same behavior as Any.
+Classes, Types, Subtypes
+Another thing I want to explain right here is the difference between classes, types, and subtypes. This is in preparation for the next part of this post which deals with the different types of variance explicitly.
+Class: Cat
+Types: Cat, Cat?
+Subtypes: Anything that extends Cat, Cat itself
+
+The following represents valid subtypes:
+A → A? ✅
+Cat → Cat? ✅
+Cat? → Cat ❌
+As seen in the example above, you can always store a non-nullable value in a variable that accepts nullables, but not the other way around. Additionally, each generic class theoretically produces an infinite amount of types.
+Invariance, Covariance, Contravariance
+Invariance
+→ A generic class is called invariant on the type parameter when for two different types A and B, Class<A> is neither a subtype nor a supertype of Class<B>.
+As we've seen, in the example above, it's not always safe to pass a MutableList<Cat> when a MutableList<Any> is expected, even though Cat is a subtype of Any. The reverse isn't true either: MutableList<Any> isn't a subtype of MutableList<Cat>. Such classes or interfaces are called invariant.
+Covariance (preserved subtyping relation)
+→ A generic class is called covariant on the type parameter when the following holds: Class<A> is a subtype of Class<B> if A is a subtype of B.
+For example, Kotlin's List interface represents a read-only collection, which means if Cat is a subtype of Animal, then List<Cat> is a subtype of List<Animal>. Such classes or interfaces are called covariant.
+The out variance modifier is used to declare a class as covariant on a certain type parameter.
+Examples:
+
+To guarantee type safety, T can only be used in so-called out positions. This means, that T is only returned from the function, it is, therefore, being produced by it.
+Contravariance (reversed subtyping relations)
+→ A generic class is called contravariant on the type parameter when the following holds: Class<A> is a subtype of Class<B> if B is a subtype of A.
+For example, Consumer<Animal> is a subtype of Consumer<Cat> because Cat is a subtype of Animal. The subtyping relation is reversed, in comparison to Covariance. Contravariance can be seen as a mirror to covariance.
+The in variance modifier is used to declare a class as contravariant on a certain type parameter.
+Examples:
+
+In this case, T can only be used in so-called in positions, which means that values of T are passed into functions of this class. It is, therefore, being consumed by those functions. Passing T as a function parameter means that it can be modified by functions, which requires different behavior.
+Keep in mind that a class or interface can be covariant on one and contravariant on another type parameter.
+
+Declaration-site variance
+Kotlin supports specifying the variance modifiers once in the class or interface definition so clients of your API don't have to think about them. The behavior specified in your definition applies to every function inside it and thus leads to expected behavior for every function.
+This distinguishes Kotlin from Java, where you would have to use Wildcards all the time. Every function needs to specify the behavior because Java does not support declaration site variance yet which could lead to inconsistent APIs.
+In Kotlin, you can easily design consistent APIs and avoid a lot of boilerplate using declaration-site variance:
+
+Use-site variance
+Use site variance is analog to Java's Wildcards.
+An example that helped me a lot to understand what the in modifier really means is the copy function:
+
+You need to think about the following: The out modifier restricts writing since the source list of type Animal could save cats as well as dogs. Both are animals but can still not be converted into each other.
+Now, which type of list does the destination list need to have in order to save cats as well as dogs? The answer is everything above Cat in the type hierarchy, which corresponds to Cat itself and Animal in this case. Using the in modifier ensures type-safety and prohibits copying cats into a list of dogs, even when both lists contain animals.
+
+We are basically saying, that our destination list is not a regular MutableList, but rather a restricted (projected) one, which only allows certain types depending on the variance modifier. This is called type projection.
+When using values of type parameters that are declared as out, the compiler only allows to use them in out positions, therefore read from them. Only certain methods that return T are allowed, like get() for example.
+Contrary, we are allowed to use types declared as in in both in and out positions, therefore both write and read from these values.
+Here is a great visualization I found recently on the internet:
+Conclusion
+I hope you enjoyed this little dive into type variance in Kotlin and hope you understood everything. To deepen your understanding even further, I encourage you to check out the links below. If you have any questions concerning type variance in Kotlin I am happy to help you in the comments below.
+Sources:
+Official Kotlin documentation
+Declaration-Site Variance by Dave Leeds
+Kotlin in Action (Book)
+Java ist auch eine Insel (Book)
+
+André Ramon is currently studying Computer Science in Germany and builds native Android applications using Kotlin. → www.andreramon.com

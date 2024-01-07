@@ -26,10 +26,7 @@ export default function Footer() {
           <p className="text-sm font-bold text-gray-500">other</p>
           <ul>
             <li>
-              <FooterLink to="/imprint" title="Imprint" />
-            </li>
-            <li>
-              <FooterLink to="/imprint" title="Privacy" />
+              <FooterLink to="/privacy" title="Privacy" />
             </li>
           </ul>
         </div>
