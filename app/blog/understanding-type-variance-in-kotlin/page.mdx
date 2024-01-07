@@ -7,7 +7,7 @@ In this post, I want to give you a clear explanation of type variance in Kotlin.
 
 Let's dive right in! 🤓
 
-# Introduction to variance
+## Introduction to variance
 When talking about variance, you can think about the relation between generic types that share the same base type but have different type arguments. When working with a `List<Any>`, the base type would be List and the type argument Any. This relation is key to provide type safety in your API.
 An important aspect to keep in mind is that while it's safe to pass a Cat to a function that expects Any, it's not always safe to pass a `List<Cat>` when a `List<Any>` is expected. Imagine the following function:
 
@@ -44,12 +44,12 @@ Examples:
 In this case, T can only be used in so-called in positions, which means that values of T are passed into functions of this class. It is, therefore, being consumed by those functions. Passing T as a function parameter means that it can be modified by functions, which requires different behavior.
 Keep in mind that a class or interface can be covariant on one and contravariant on another type parameter.
 
-# Declaration-site variance
+## Declaration-site variance
 Kotlin supports specifying the variance modifiers once in the class or interface definition so clients of your API don't have to think about them. The behavior specified in your definition applies to every function inside it and thus leads to expected behavior for every function.
 This distinguishes Kotlin from Java, where you would have to use Wildcards all the time. Every function needs to specify the behavior because Java does not support declaration site variance yet which could lead to inconsistent APIs.
 In Kotlin, you can easily design consistent APIs and avoid a lot of boilerplate using declaration-site variance:
 
-# Use-site variance
+## Use-site variance
 Use site variance is analog to Java's Wildcards.
 An example that helped me a lot to understand what the in modifier really means is the copy function:
 
@@ -61,13 +61,11 @@ When using values of type parameters that are declared as out, the compiler only
 Contrary, we are allowed to use types declared as in in both in and out positions, therefore both write and read from these values.
 Here is a great visualization I found recently on the internet:
 
-# Conclusion
+## Conclusion
 I hope you enjoyed this little dive into type variance in Kotlin and hope you understood everything. To deepen your understanding even further, I encourage you to check out the links below. If you have any questions concerning type variance in Kotlin I am happy to help you in the comments below.
 
-# Sources:
-Official Kotlin documentation
-Declaration-Site Variance by Dave Leeds
-Kotlin in Action (Book)
-Java ist auch eine Insel (Book)
-
-André Ramon is currently studying Computer Science in Germany and builds native Android applications using Kotlin. → www.andreramon.com
+## Sources:
+- [Official Kotlin documentation](https://kotlinlang.org/docs/reference/generics.html)
+- [Declaration-Site Variance by Dave Leeds](https://typealias.com/concepts/declaration-site-variance/)
+- [Kotlin in Action (Book)](https://amzn.to/2CUwCVV)
+- [Java ist auch eine Insel (Book)](https://amzn.to/3aQnmkm)
