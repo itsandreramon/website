@@ -1,5 +1,3 @@
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Subtitle from "./components/Subtitle";
 
