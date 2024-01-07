@@ -1,4 +1,5 @@
-Converting your Android Gradle scripts to Kotlin
+# Converting your Android Gradle scripts to Kotlin
+
 Using the same language throughout your whole project can further streamline and speed up your development process. With the stable release announcement of the Kotlin DSL for Gradle, things got even more compelling for modern Android development considering Kotlin is now the preferred language for Android. The Kotlin DSL has some clear benefits in contrast to the Groovy DSL, which includes the following:
 statically typed & type-safe DSL
 first-class functions, extension methods
@@ -78,7 +79,7 @@ minifyEnabled is not the actual name of the property → correct name is isMinif
 Updating implementations
 To get things working you need to change the way of implementing some things like the fileTree implementation in this case.
 Because we imported the all distribution type before, you can take a look at the source code by navigating to the definition. The fileTree method signature looks like this:
-fileTree(Map<String, ?> args)
+
 As you can see, the method accepts a map of arguments. In Kotlin you would express this via pairs, which can be identified by the use of the infix function to.
 
 4.) Managing your dependencies the Kotlin way
