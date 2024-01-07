@@ -1,4 +1,4 @@
-export default function Socials(props) {
+export default function Socials() {
   return (
     <div className="flex flex-row justify-start space-x-4 items-center justify-end">
       <a href="https://www.github.com/itsandreramon" target="_blank">

@@ -1,6 +1,6 @@
 import FooterLink from "./FooterLink";
 
-export default function Footer({ children }) {
+export default function Footer() {
   return (
     <div className="lg:p-24 p-8 border-t border-gray-800">
       <div className="flex flex-row justify-between">
@@ -30,7 +30,7 @@ export default function Footer({ children }) {
       <div className="pt-16">
         <p className="text-xs font-mono text-slate-500">Made in Berlin</p>
         <p className="text-xs font-mono text-slate-500">
-          Copyright © 2024 - All rights reserved
+          Copyright © {new Date().getFullYear()} - All rights reserved
         </p>
       </div>
     </div>
