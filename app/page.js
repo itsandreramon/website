@@ -3,6 +3,17 @@ import Button from "./components/Button";
 import Image from "next/image";
 import avatar from "../public/avatar.jpg";
 
+export const metadata = {
+  title: "Home | André Thiele",
+  description: "The personal Website of André Thiele",
+  alternates: {
+    types: {
+      "application/atom+xml": "https://overreacted.io/atom.xml",
+      "application/rss+xml": "https://overreacted.io/rss.xml",
+    },
+  },
+};
+
 export default function Home() {
   return (
     <div>
@@ -15,7 +26,7 @@ export default function Home() {
       />
       <div className="max-w-xl">
         <p className="text-4xl text-slate-400 py-12">
-          Hi, I'm André, currently working at{" "}
+          Hi, I'm André Thiele, currently working at{" "}
           <span className="font-bold text-white">SAP</span> as an{" "}
           <span className="font-bold text-white">Android Developer</span>.
         </p>

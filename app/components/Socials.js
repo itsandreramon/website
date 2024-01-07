@@ -6,7 +6,16 @@ export default function Socials() {
           src="/github.svg"
           style={{
             width: "auto",
-            height: "1.2rem",
+            height: "1.1rem",
+          }}
+        />
+      </a>
+      <a href="https://www.linkedin.com/in/itsandreramon" target="_blank">
+        <img
+          src="/linkedin.svg"
+          style={{
+            width: "auto",
+            height: "1.1rem",
           }}
         />
       </a>
