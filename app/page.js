@@ -18,7 +18,7 @@ export default function Home() {
         style={{ borderRadius: "50%" }}
       />
       <div className="max-w-xl">
-        <p className="text-2xl text-slate-400 py-12">
+        <p className="text-4xl text-slate-400 py-12">
           Hi, I'm André Thiele, currently working at{" "}
           <span className="font-bold text-white">SAP</span> as an{" "}
           <span className="font-bold text-white">Android Developer</span>.
