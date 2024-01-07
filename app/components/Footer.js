@@ -2,7 +2,7 @@ import FooterLink from "./FooterLink";
 
 export default function Footer({ children }) {
   return (
-    <div className="p-24">
+    <div className="lg:p-24 p-8 border-t border-gray-800">
       <div className="flex flex-row justify-between">
         <div className="basis-1/2">
           <p className="text-sm font-bold text-gray-500">connect</p>
