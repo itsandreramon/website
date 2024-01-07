@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Privacy | André Thiele",
+};
+
 export default function Privacy() {
   return (
     <div className="font-mono max-w-4xl text-justify mx-auto">

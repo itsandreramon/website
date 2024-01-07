@@ -1,5 +1,9 @@
 import BlogEntry from "../components/BlogEntry";
 
+export const metadata = {
+  title: "Blog | André Thiele",
+};
+
 export default function Blog() {
     return (
       <div className="max-w-4xl mx-auto font-mono flex flex-col space-y-8">
