@@ -5,6 +5,12 @@ import avatar from "../public/avatar.jpg";
 
 export const metadata = {
   title: "André Thiele",
+  icons: {
+    icon: [
+      { url: "/favicon-light.png", media: "(prefers-color-scheme: light)" },
+      { url: "/favicon-dark.png", media: "(prefers-color-scheme: dark)" },
+    ],
+  },
 };
 
 export default function Home() {

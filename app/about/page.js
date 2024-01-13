@@ -1,5 +1,11 @@
 export const metadata = {
   title: "About | André Thiele",
+  icons: {
+    icon: [
+      { url: "/favicon-light.png", media: "(prefers-color-scheme: light)" },
+      { url: "/favicon-dark.png", media: "(prefers-color-scheme: dark)" },
+    ],
+  },
 };
 
 export default function Home() {
