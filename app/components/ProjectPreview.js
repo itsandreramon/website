@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
-import tempory from "../../public/project-tempory.jpg";
+import tempory from "../../public/project-tempory-min.jpg";
 
 export default function ProjectPreview(props) {
   const [isHovered, setIsHovered] = useState(false)
@@ -12,16 +12,15 @@ export default function ProjectPreview(props) {
     <Link href={props.to}>
       <div
         className="h-64 w-96 relative"
-        onMouseOver={() => {
-          console.log('onMouseOver')
-          setIsHovered(true)
-        }}
+        onMouseOver={() => setIsHovered(true)}
         onMouseOut={() => setIsHovered(false)}
       >
         <div className="absolute overflow-hidden rounded-2xl relative">
           <Image
             src={tempory}
             alt=""
+            quality={50}
+            placeholder="blur"
             className={`${isHovered ? "scale-105 grayscale-0" : "grayscale"} h-64 w-full relative object-cover transition brightness-50`}
           />
         </div>

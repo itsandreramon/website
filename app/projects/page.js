@@ -18,7 +18,6 @@ export default function Home() {
       </p>
       <div className="flex flex-row space-x-12">
         <ProjectPreview title="Tempory" to="/projects/tempory" />
-        <ProjectPreview title="Nexory" to="/projects/nexory" />
       </div>
     </div>
   );

@@ -19,7 +19,6 @@ export default function Navigation() {
               <p className="font-bold">André Thiele</p>
             </Link>
           </div>
-
           <div className="basis-3/4 flex flex-row justify-end space-x-12">
             <NavigationLink title="About" to="/about" />
             <NavigationLink title="Projects" to="/projects" />
@@ -29,7 +28,6 @@ export default function Navigation() {
           </div>
         </div>
       </div>
-
       {/* "Mobile Nav" */}
       <div className="border-b border-gray-800 lg:hidden visible fixed w-full bg-black">
         <div className="flex flex-row items-center h-16">
@@ -40,22 +38,12 @@ export default function Navigation() {
             Menu
           </button>
         </div>
-        <div
-          className={`${isExpanded ? "visible border-b border-gray-800" : "hidden "} px-8`}
-        >
+        <div className={`${isExpanded ? "visible border-b border-gray-800" : "hidden "} px-8`}>
           <ul className="py-4">
-            <li>
-              <NavigationLinkMobile to="/about" title="About" />
-            </li>
-            <li>
-              <NavigationLinkMobile to="/projects" title="Projects" />
-            </li>
-            <li>
-              <NavigationLinkMobile to="/blog" title="Blog" />
-            </li>
-            <li>
-              <NavigationLinkMobile to="/contact" title="Contact" />
-            </li>
+            <li><NavigationLinkMobile to="/about" title="About" /></li>
+            <li><NavigationLinkMobile to="/projects" title="Projects" /></li>
+            <li><NavigationLinkMobile to="/blog" title="Blog" /></li>
+            <li><NavigationLinkMobile to="/contact" title="Contact" /></li>
           </ul>
           <div className="border-t border-gray-800 w-48" />
           <div className="my-8 max-w-fit">
