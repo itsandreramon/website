@@ -1,18 +1,23 @@
+"use client"
+
 import Link from "next/link";
 import Image from "next/image";
+import React, { useState } from "react";
 import tempory from "../../public/project-tempory.jpg";
 
 export default function ProjectPreview(props) {
+  const [isHovered, setHovered] = useState(false);
+
   return (
-    <Link href={props.title}>
-      <div className="h-64 w-96 relative">
+    <Link href={props.to}>
+      <div className="h-64 w-96 relative" onMouseOver={() => setHovered(true)} onMouseOut={() => setHovered(false)} >
         <div className="absolute overflow-hidden rounded-2xl relative">
           <Image
             src={tempory}
-            className="h-64 w-full object-cover grayscale brightness-50 hover:scale-105 hover:grayscale-0 transition"
+            className={`${isHovered ? "scale-105 grayscale-0" : "grayscale"} h-64 w-full relative object-cover transition brightness-50`}
           />
         </div>
-        <p className="text-2xl font-bold bg-red-400 absolute inset-y-2/4 inset-x-2/4 -translate-y-2/4 -translate-x-2/4">
+        <p className="-mb-8 text-2xl w-full text-center font-bold absolute inset-y-2/4 -translate-y-2/4">
           {props.title}
         </p>
       </div>

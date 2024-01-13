@@ -1,7 +1,5 @@
-import ProjectPreview from "../components/ProjectPreview";
-
 export const metadata = {
-  title: "Projects | André Thiele",
+  title: "Nexory | André Thiele",
   icons: {
     icon: [
       { url: "/favicon-light.png", media: "(prefers-color-scheme: light)" },
@@ -14,12 +12,8 @@ export default function Home() {
   return (
     <div className="max-w-4xl ftext-justify mx-auto">
       <p className="text-4xl font-bold text-slate-400 pb-8 text-center">
-        Projects
+        Nexory
       </p>
-      <div className="flex flex-row space-x-12">
-        <ProjectPreview title="Tempory" to="/projects/tempory" />
-        <ProjectPreview title="Nexory" to="/projects/nexory" />
-      </div>
     </div>
   );
 }
