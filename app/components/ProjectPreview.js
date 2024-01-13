@@ -1,19 +1,26 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 import tempory from "../../public/project-tempory.jpg";
+import useDebounce from "../useDebounce";
 
 export default function ProjectPreview(props) {
-  const [isHovered, setHovered] = useState(false);
+  const [_isHovered, setIsHovered] = useState(false)
+  const isHovered = useDebounce(_isHovered, 300)
 
   return (
     <Link href={props.to}>
-      <div className="h-64 w-96 relative" onMouseOver={() => setHovered(true)} onMouseOut={() => setHovered(false)} >
+      <div
+        className="h-64 w-96 relative"
+        onMouseOver={() => setIsHovered(true)}
+        onMouseOut={() => setIsHovered(false)}
+      >
         <div className="absolute overflow-hidden rounded-2xl relative">
           <Image
             src={tempory}
+            alt=""
             className={`${isHovered ? "scale-105 grayscale-0" : "grayscale"} h-64 w-full relative object-cover transition brightness-50`}
           />
         </div>

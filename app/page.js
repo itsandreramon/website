@@ -18,6 +18,7 @@ export default function Home() {
     <div className="h-full">
       <Image
         src={avatar}
+        alt=""
         height="200"
         width="200"
         placeholder="blur"
