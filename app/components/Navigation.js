@@ -13,7 +13,7 @@ export default function Navigation() {
     <div>
       {/* "Desktop Nav" */}
       <div className="lg:block hidden border-b border-gray-800 fixed bg-black w-full">
-        <div className="flex flex-row items-center px-8 lg:h-32">
+        <div className="flex flex-row items-center px-8 lg:h-32 lg:px-24">
           <div className="basis-1/4">
             <Link href="/">
               <p className="font-bold">André Thiele</p>
