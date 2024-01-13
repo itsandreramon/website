@@ -20,7 +20,6 @@ export default function ProjectPreview(props) {
             src={tempory}
             alt=""
             quality={50}
-            placeholder="blur"
             className={`${isHovered ? "scale-105 grayscale-0" : "grayscale"} h-64 w-full relative object-cover transition brightness-50`}
           />
         </div>
