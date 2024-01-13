@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="flex flex-row justify-between">
         <div className="pr-48">
           <p className="text-sm font-bold text-gray-500 pb-4">connect</p>
-          <Socials/>
+          <Socials />
         </div>
         <div className="grow">
           <p className="text-sm font-bold text-gray-500 pb-4">other</p>
