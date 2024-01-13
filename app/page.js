@@ -4,12 +4,12 @@ import Image from "next/image";
 import avatar from "../public/avatar.jpg";
 
 export const metadata = {
-  title: "Home | André Thiele",
+  title: "André Thiele",
 };
 
 export default function Home() {
   return (
-    <div>
+    <div className="h-full">
       <Image
         src={avatar}
         height="200"

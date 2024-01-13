@@ -33,12 +33,12 @@ export default function Navigation() {
       {/* "Mobile Nav" */}
       <div className="border-b border-gray-800 lg:hidden visible fixed w-full bg-black">
         <div className="flex flex-row items-center h-16">
-        <button
-          className="mx-8 border-gray-800 items-center border-solid p-2 border-2 rounded-lg"
-          onClick={() => setExpanded(!isExpanded)}
-        >
-          Menu
-        </button>
+          <button
+            className="mx-8 border-gray-800 items-center border-solid p-2 border-2 rounded-lg"
+            onClick={() => setExpanded(!isExpanded)}
+          >
+            Menu
+          </button>
         </div>
         <div
           className={`${isExpanded ? "visible border-b border-gray-800" : "hidden "} px-8`}

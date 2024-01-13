@@ -11,8 +11,10 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className="flex flex-col min-h-screen">
           <Navigation />
-          {"Add Navigation height as top margin"}
-          <div className="grow lg:p-24 p-8 lg:mt-32 mt-16">{children}</div>
+          {/* Add Navigation height as top margin" */}
+          <div className="grow lg:p-24 p-8 lg:mt-32 mt-16 flex items-center">
+            {children}
+          </div>
           <Footer />
         </div>
       </body>

@@ -6,7 +6,8 @@ export const metadata = {
 
 export default function Blog() {
   return (
-    <div className="max-w-4xl mx-auto font-mono flex flex-col space-y-8">
+    <div className="max-w-4xl mx-auto flex flex-col space-y-8">
+      <p className="text-4xl font-bold text-slate-400 pb-8 text-center">Blog</p>
       <BlogEntry
         to="/blog/creating-and-managing-custom-scoped-components-in-dagger-anvil"
         title="Creating and managing custom-scoped components in Dagger/Anvil"

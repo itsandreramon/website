@@ -1,7 +1,7 @@
 export function useMDXComponents(components) {
   return {
     p: ({ children }) => (
-      <p className="pb-8 text-slate-400 text-justify">{children}</p>
+      <p className="pb-8 text-slate-300 text-justify">{children}</p>
     ),
     h1: ({ children }) => (
       <h1 className="font-bold text-4xl pb-4">{children}</h1>
@@ -25,7 +25,7 @@ export function useMDXComponents(components) {
         {children}
       </ul>
     ),
-    li: ({ children }) => <li className="text-slate-400">{children}</li>,
+    li: ({ children }) => <li className="text-slate-300">{children}</li>,
     ...components,
   };
 }
