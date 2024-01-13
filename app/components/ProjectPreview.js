@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import tempory from "../../public/project-tempory-min.jpg";
 
 export default function ProjectPreview(props) {
-  const [isHovered, setIsHovered] = useState(false)
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <Link href={props.to}>

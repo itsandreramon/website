@@ -38,12 +38,22 @@ export default function Navigation() {
             Menu
           </button>
         </div>
-        <div className={`${isExpanded ? "visible border-b border-gray-800" : "hidden "} px-8`}>
+        <div
+          className={`${isExpanded ? "visible border-b border-gray-800" : "hidden "} px-8`}
+        >
           <ul className="py-4">
-            <li><NavigationLinkMobile to="/about" title="About" /></li>
-            <li><NavigationLinkMobile to="/projects" title="Projects" /></li>
-            <li><NavigationLinkMobile to="/blog" title="Blog" /></li>
-            <li><NavigationLinkMobile to="/contact" title="Contact" /></li>
+            <li>
+              <NavigationLinkMobile to="/about" title="About" />
+            </li>
+            <li>
+              <NavigationLinkMobile to="/projects" title="Projects" />
+            </li>
+            <li>
+              <NavigationLinkMobile to="/blog" title="Blog" />
+            </li>
+            <li>
+              <NavigationLinkMobile to="/contact" title="Contact" />
+            </li>
           </ul>
           <div className="border-t border-gray-800 w-48" />
           <div className="my-8 max-w-fit">
