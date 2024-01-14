@@ -25,7 +25,7 @@ export default function About() {
         <a href="https://play.google.com/store/apps/details?id=com.sap.ariba.ibx">
           SAP Ariba Shopping
         </a>{" "}
-        as part of thee Mobile Experience & Engineering team in{" "}
+        as part of the Mobile Experience & Engineering team in{" "}
         <span className="text-white">Berlin</span>.
       </p>
 
