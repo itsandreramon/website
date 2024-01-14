@@ -30,6 +30,7 @@ export default function Home() {
       <p className="text-2xl text-slate-400 pt-8">
         At SAP, I am also part of the <span className="text-white">Early Talent Community</span> as well as the current MXE Android Developer <span className="text-white">Community Lead</span>.
       </p>
+      
       <p className="text-2xl text-slate-400 pt-8">As a Community Lead, I'm responsible for <span className="text-white">organizing & managing</span> casual meetings where engineers from differet mobile teams at SAP come together to discuss the latest trends in Mobile & Android development. </p>
 
       <p className="text-2xl text-slate-400 pt-8">

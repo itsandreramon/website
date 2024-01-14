@@ -12,11 +12,9 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="max-w-4xl ftext-justify mx-auto">
-      <p className="text-4xl font-bold text-slate-400 pb-8 text-center">
-        Projects
-      </p>
-      <div className="flex flex-row space-x-12">
+    <div className="max-w-4xl text-justify mx-auto">
+      <div className="flex flex-row flex-wrap gap-12">
+        <ProjectPreview title="Tempory" to="/projects/tempory" />
         <ProjectPreview title="Tempory" to="/projects/tempory" />
       </div>
     </div>
