@@ -1,6 +1,3 @@
-import ProjectPreviewTempory from "./ProjectPreviewTempory";
-import ProjectPreviewNexory from "./ProjectPreviewNexory";
-
 export const metadata = {
   title: "Projects | André Thiele",
   icons: {

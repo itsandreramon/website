@@ -21,7 +21,7 @@ export default function Navigation() {
           </div>
           <div className="flex flex-row justify-end space-x-12">
             <NavigationLink title="About" to="/about" />
-            <NavigationLink title="Projects" to="/projects" />
+            <NavigationLink title="Work" to="/work" />
             <NavigationLink title="Blog" to="/blog" />
             <NavigationLink title="Contact" to="/contact" />
             <Socials />
@@ -52,8 +52,8 @@ export default function Navigation() {
             </li>
             <li>
               <NavigationLinkMobile
-                to="/projects"
-                title="Projects"
+                to="/work"
+                title="Work"
                 onClick={() => setExpanded(false)}
               />
             </li>

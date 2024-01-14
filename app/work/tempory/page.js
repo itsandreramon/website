@@ -4,9 +4,6 @@ import route from "../../../public/projects/tempory/route.png";
 import customer from "../../../public/projects/tempory/customer.png";
 import customers from "../../../public/projects/tempory/customers.png";
 import ProjectPreviewNexory from "@/app/components/ProjectPreviewNexory";
-import ProjectPreviews from "@/app/components/ProjectPreviews";
-import { ArrowLeft } from "react-feather";
-import Link from "next/link";
 import MoreProjects from "@/app/components/MoreProjects";
 
 export const metadata = {

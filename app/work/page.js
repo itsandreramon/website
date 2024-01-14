@@ -3,7 +3,7 @@ import ProjectPreviewNexory from "../components/ProjectPreviewNexory";
 import ProjectPreviews from "../components/ProjectPreviews";
 
 export const metadata = {
-  title: "Projects | André Thiele",
+  title: "Work | André Thiele",
   icons: {
     icon: [
       { url: "/favicon-light.png", media: "(prefers-color-scheme: light)" },
