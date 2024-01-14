@@ -22,7 +22,7 @@ export default function Tempory() {
       <p className="text-4xl font-bold text-center pt-32">Tempory</p>
       <div className="text-center text-slate-400 pb-8 pt-4">
         <a href="https://tempory.app/" target="_blank">
-          Website
+          Visit Website
         </a>
       </div>
       <div className="text-xl max-w-4xl text-slate-400">

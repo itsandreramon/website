@@ -16,6 +16,7 @@ export default function About() {
 
   return (
     <div className="max-w-4xl">
+      <p className="text-4xl font-bold pt-32 pb-8">About</p>
       <p className="text-2xl text-slate-400">
         I'm {age} years old and currently working at{" "}
         <span className="text-white">SAP</span> as a full-time{" "}
