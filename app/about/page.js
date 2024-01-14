@@ -16,12 +16,8 @@ export default function Home() {
 
   return (
     <div className="max-w-4xl">
-      <p className="text-4xl font-bold pb-8">
-        About
-      </p>
-
       <p className="text-2xl text-slate-400">
-        I'm André, {age} years old and currently working at <span className="text-white">SAP</span> as a full-time <span className="text-white">Android Developer</span>. I'm currently working on the mobile refresh of{" "}
+        I'm {age} years old and currently working at <span className="text-white">SAP</span> as a full-time <span className="text-white">Android Developer</span>. I'm currently working on the mobile refresh of{" "}
         <a href="https://play.google.com/store/apps/details?id=com.sap.ariba.ibx">
           SAP Ariba Shopping
         </a> as part of their SAP Mobile Experience & Engineering team in <span className="text-white">Berlin</span>.

@@ -14,12 +14,16 @@ export default function Navigation() {
       {/* "Desktop Nav" */}
       <div className="lg:block hidden border-b border-gray-800 fixed bg-black w-full">
         <div className="flex flex-row items-center px-8 lg:h-32 lg:px-24">
-          <div className="basis-1/4">
-            <Link href="/">
+          <div className="grow">
+          <Link href="/">
+            <div className="flex flex-col">
               <p className="font-bold">André Thiele</p>
+            <p className="text-slate-500">Building digital experiences with attention to every detail.</p>
+            </div>
             </Link>
+            
           </div>
-          <div className="basis-3/4 flex flex-row justify-end space-x-12">
+          <div className="flex flex-row justify-end space-x-12">
             <NavigationLink title="About" to="/about" />
             <NavigationLink title="Projects" to="/projects" />
             <NavigationLink title="Blog" to="/blog" />

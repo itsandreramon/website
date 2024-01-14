@@ -4,7 +4,7 @@ import Image from "next/image";
 import avatar from "../public/avatar.jpg";
 
 export const metadata = {
-  title: "André Thiele",
+  title: "Home | André Thiele",
   icons: {
     icon: [
       { url: "/favicon-light.png", media: "(prefers-color-scheme: light)" },
