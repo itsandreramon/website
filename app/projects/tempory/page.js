@@ -1,3 +1,9 @@
+import Image from "next/image";
+import login from "../../../public/projects/tempory/login.png"
+import route from "../../../public/projects/tempory/route.png"
+import customer from "../../../public/projects/tempory/customer.png"
+import customers from "../../../public/projects/tempory/customers.png"
+
 export const metadata = {
   title: "Tempory | André Thiele",
   icons: {
@@ -10,10 +16,14 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="max-w-4xl ftext-justify mx-auto">
+    <div className="text-justify mx-auto">
       <p className="text-4xl font-bold text-slate-400 pb-8 text-center">
         Tempory
       </p>
+      <Image src={login}/>
+      <Image src={route}/>
+      <Image src={customer}/>
+      <Image src={customers}/>
     </div>
   );
 }

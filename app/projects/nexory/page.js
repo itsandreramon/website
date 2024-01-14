@@ -1,3 +1,6 @@
+import Image from "next/image";
+import home from "../../../public/projects/nexory/home.png"
+
 export const metadata = {
   title: "Nexory | André Thiele",
   icons: {
@@ -14,6 +17,7 @@ export default function Home() {
       <p className="text-4xl font-bold text-slate-400 pb-8 text-center">
         Nexory
       </p>
+      <Image src={home}/>
     </div>
   );
 }
