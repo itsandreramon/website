@@ -20,7 +20,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="font-mono text-xs text-slate-500 pt-16">
-        <p> Built in Berlin with Next.js</p>
+        <a href="https://github.com/itsandreramon/website" target="_blank" className="hover:underline">Built in Berlin with Next.js</a>
         <p>Copyright © {new Date().getFullYear()} - All rights reserved</p>
       </div>
     </div>
