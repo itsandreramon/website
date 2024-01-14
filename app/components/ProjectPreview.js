@@ -10,7 +10,7 @@ export default function ProjectPreview(props) {
   return (
     <Link href={props.to}>
       <div
-        className="h-32 sm:h-64 w-64 sm:w-96 relative -z-10"
+        className="h-32 sm:h-64 w-64 sm:w-96 relative -z-10 sm:z-0"
         onMouseOver={() => setIsHovered(true)}
         onMouseOut={() => setIsHovered(false)}
       >
