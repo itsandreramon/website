@@ -16,12 +16,7 @@ export default function Navigation() {
         <div className="flex flex-row items-center px-8 lg:h-32 lg:px-24">
           <div className="grow">
             <Link href="/">
-              <div className="flex flex-col">
                 <p className="font-bold">André Thiele</p>
-                <p className="text-slate-500">
-                  Building digital experiences with attention to every detail.
-                </p>
-              </div>
             </Link>
           </div>
           <div className="flex flex-row justify-end space-x-12">
