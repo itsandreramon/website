@@ -15,7 +15,7 @@ export const metadata = {
 export default function Home() {
   return (
     <div className="max-w-4xl text-justify mx-auto">
-      <div className="flex flex-row flex-wrap gap-12">
+      <div className="flex flex-col gap-12 w-full lg:flex-row">
         <ProjectPreview title="Tempory" to="/projects/tempory" src={tempory} />
         <ProjectPreview title="Nexory" to="/projects/nexory" src={nexory} />
       </div>

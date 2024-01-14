@@ -29,36 +29,37 @@ export default function Navigation() {
         </div>
       </div>
       {/* "Mobile Nav" */}
-      <div className="border-b border-gray-800 lg:hidden visible fixed w-full bg-black">
-        <div className="flex flex-row items-center h-16">
+      <div className="border-b border-gray-800 lg:hidden visible fixed w-full bg-black z-10">
+        <div className="flex flex-row items-center h-16 mx-8">
+        <Link href="/" className="grow" onClick={() => setExpanded(false)} >
+          <p className="font-bold">André Thiele</p>
+          </Link>
           <button
-            className="mx-8 border-gray-800 items-center border-solid p-2 border-2 rounded-lg"
+            className="border-gray-800 items-center border-solid p-2 border-2 rounded-lg"
             onClick={() => setExpanded(!isExpanded)}
           >
             Menu
           </button>
         </div>
-        <div
-          className={`${isExpanded ? "visible border-b border-gray-800" : "hidden "} px-8`}
-        >
+        <div className={`${isExpanded ? "visible" : "hidden "} px-8`}>
           <ul className="py-4">
             <li>
-              <NavigationLinkMobile to="/about" title="About" />
+              <NavigationLinkMobile to="/about" title="About" onClick={() => setExpanded(false)} />
             </li>
             <li>
-              <NavigationLinkMobile to="/projects" title="Projects" />
+              <NavigationLinkMobile to="/projects" title="Projects" onClick={() => setExpanded(false)} />
             </li>
             <li>
-              <NavigationLinkMobile to="/blog" title="Blog" />
+              <NavigationLinkMobile to="/blog" title="Blog" onClick={() => setExpanded(false)} />
             </li>
             <li>
-              <NavigationLinkMobile to="/contact" title="Contact" />
+              <NavigationLinkMobile to="/contact" title="Contact" onClick={() => setExpanded(false)} />
             </li>
           </ul>
-          <div className="border-t border-gray-800 w-48" />
-          <div className="my-8 max-w-fit">
-            <Socials />
-          </div>
+              <div className="border-t border-gray-800 w-48 ms-auto" />
+              <div className="my-8 max-w-fit ms-auto">
+                <Socials />
+              </div>
         </div>
       </div>
     </div>
