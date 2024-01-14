@@ -7,7 +7,7 @@ import Link from "next/link";
 import Socials from "./Socials";
 
 export default function Navigation() {
-  const [isExpanded, setExpanded] = useState(true);
+  const [isExpanded, setExpanded] = useState(false);
 
   return (
     <div>
