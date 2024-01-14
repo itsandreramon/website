@@ -5,12 +5,12 @@ import Socials from "./Socials";
 export default function Footer() {
   return (
     <div className="lg:p-24 p-8 border-t border-gray-800">
-      <div className="flex flex-row justify-between">
-        <div className="pr-48">
+      <div className="flex flex-row justify-between max-w-xl">
+        <div className="basis-1/2">
           <p className="text-sm font-bold text-gray-500 pb-4">connect</p>
           <Socials />
         </div>
-        <div className="grow">
+        <div className="basis-1/2">
           <p className="text-sm font-bold text-gray-500 pb-4">other</p>
           <ul>
             <li>
