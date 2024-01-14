@@ -21,7 +21,6 @@ export default function Home() {
         alt=""
         height="200"
         width="200"
-        placeholder="blur"
         style={{ borderRadius: "50%" }}
       />
       <div className="max-w-xl">
