@@ -22,7 +22,7 @@ export default function About() {
         At the moment I am working on the mobile refresh of <a href="https://play.google.com/store/apps/details?id=com.sap.ariba.ibx">SAP Ariba Shopping</a> as part of the Mobile Experience & Engineering team in <span className="text-white">Berlin</span>.
       </p>
       <p className="text-2xl text-slate-400 pt-8">
-        At SAP, I am also part of the <span className="text-white">Early Talent Community</span> as well as the current MXE Android Developer <span className="text-white">Community Lead</span>.
+        At SAP, I'm also part of the <span className="text-white">Early Talent Community</span> as well as the current MXE Android Developer <span className="text-white">Community Lead</span>.
       </p>
       <p className="text-2xl text-slate-400 pt-8">
         As a Community Lead, I'm responsible for <span className="text-white">organizing & managing</span> meetings where engineers from different mobile teams at SAP come together to discuss the latest trends in Mobile & Android development.{" "}
