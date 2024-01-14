@@ -18,6 +18,7 @@ export default function ProjectPreview(props) {
           <Image
             src={props.src}
             alt=""
+            placeholder="blur"
             quality={100}
             className={`${isHovered ? "lg:scale-125 lg:grayscale-0 blur-none" : "lg:scale-110 lg:blur-sm"} grayscale h-64 w-full relative object-cover transition brightness-50 duration-500`}
           />
