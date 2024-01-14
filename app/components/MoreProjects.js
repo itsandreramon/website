@@ -17,7 +17,7 @@ export const metadata = {
 export default function MoreProjects({ children }) {
   return (
     <div>
-      <Link href="/projects">
+      <Link href="/work">
         <div className="flex flex-row gap-4 h-24 items-center">
           <div className="border-solid border-slate-800 border-2 rounded-full p-2">
             <ArrowLeft className="text-white" />
