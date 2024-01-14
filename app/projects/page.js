@@ -1,6 +1,6 @@
 import ProjectPreview from "../components/ProjectPreview";
-import tempory from "../../public/projects/tempory/preview.jpg"
-import nexory from "../../public/projects/nexory/preview.jpg"
+import tempory from "../../public/projects/tempory/preview.jpg";
+import nexory from "../../public/projects/nexory/preview.jpg";
 
 export const metadata = {
   title: "Projects | André Thiele",
