@@ -11,7 +11,7 @@ export const metadata = {
 export default function ProjectPreviews({ children }) {
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="flex flex-col gap-12 w-full lg:flex-row">{children}</div>
+      <div className="flex flex-col gap-12 lg:flex-row">{children}</div>
     </div>
   );
 }

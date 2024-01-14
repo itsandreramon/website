@@ -33,20 +33,20 @@ export default function Navigation() {
         <div className="flex flex-row items-center h-16 mx-8">
           <Link
             href="/"
-            className="grow z-10"
+            className="grow z-20"
             onClick={() => setExpanded(false)}
           >
             <p className="font-bold">André Thiele</p>
           </Link>
           <button
-            className="border-gray-800 items-center border-solid p-2 border-2 rounded-lg z-10 bg-black"
+            className="border-gray-800 items-center border-solid p-2 border-2 rounded-lg z-20 bg-black"
             onClick={() => setExpanded(!isExpanded)}
           >
             Menu
           </button>
         </div>
         <div
-          className={`${isExpanded ? "translate-y-50 opacity-100" : "-translate-y-full opacity-0"} bg-black border-b border-gray-800 absolute w-full px-8 transition duration-500 ease-in-out`}
+          className={`${isExpanded ? "translate-y-50 opacity-100" : "-translate-y-full opacity-0"} z-10 bg-black border-b border-gray-800 absolute w-full px-8 transition duration-500 ease-in-out`}
         >
           <ul className="py-4">
             <li>
