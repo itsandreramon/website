@@ -1,0 +1,20 @@
+import ProjectPreviewTempory from "./ProjectPreviewTempory";
+import ProjectPreviewNexory from "./ProjectPreviewNexory";
+
+export const metadata = {
+  title: "Projects | André Thiele",
+  icons: {
+    icon: [
+      { url: "/favicon-light.png", media: "(prefers-color-scheme: light)" },
+      { url: "/favicon-dark.png", media: "(prefers-color-scheme: dark)" },
+    ],
+  },
+};
+
+export default function ProjectPreviews({ children }) {
+  return (
+    <div className="max-w-4xl text-justify mx-auto">
+      <div className="flex flex-col gap-12 w-full lg:flex-row">{children}</div>
+    </div>
+  );
+}

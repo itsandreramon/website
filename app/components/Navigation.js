@@ -12,11 +12,11 @@ export default function Navigation() {
   return (
     <div>
       {/* "Desktop Nav" */}
-      <div className="lg:block hidden border-b border-gray-800 fixed bg-black w-full">
+      <div className="fixed w-full lg:block hidden border-b border-gray-800 bg-black">
         <div className="flex flex-row items-center px-8 lg:h-32 lg:px-24">
           <div className="grow">
             <Link href="/">
-                <p className="font-bold">André Thiele</p>
+              <p className="font-bold">André Thiele</p>
             </Link>
           </div>
           <div className="flex flex-row justify-end space-x-12">

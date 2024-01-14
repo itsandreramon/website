@@ -10,7 +10,7 @@ export const metadata = {
   },
 };
 
-export default function Home() {
+export default function About() {
   const today = moment();
   const age = today.diff(moment("1998-11-28"), "years");
 

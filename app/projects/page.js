@@ -1,6 +1,6 @@
-import ProjectPreview from "../components/ProjectPreview";
-import tempory from "../../public/projects/tempory/preview.jpg";
-import nexory from "../../public/projects/nexory/preview.jpg";
+import ProjectPreviewTempory from "../components/ProjectPreviewTempory";
+import ProjectPreviewNexory from "../components/ProjectPreviewNexory";
+import ProjectPreviews from "../components/ProjectPreviews";
 
 export const metadata = {
   title: "Projects | André Thiele",
@@ -12,13 +12,11 @@ export const metadata = {
   },
 };
 
-export default function Home() {
+export default function Projects() {
   return (
-    <div className="max-w-4xl text-justify mx-auto">
-      <div className="flex flex-col gap-12 w-full lg:flex-row">
-        <ProjectPreview title="Tempory" to="/projects/tempory" src={tempory} />
-        <ProjectPreview title="Nexory" to="/projects/nexory" src={nexory} />
-      </div>
-    </div>
+    <ProjectPreviews>
+      <ProjectPreviewTempory />
+      <ProjectPreviewNexory />
+    </ProjectPreviews>
   );
 }
