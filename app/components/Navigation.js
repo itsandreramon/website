@@ -31,7 +31,11 @@ export default function Navigation() {
       {/* "Mobile Nav" */}
       <div className="border-b border-gray-800 lg:hidden visible fixed w-full bg-black">
         <div className="flex flex-row items-center h-16 mx-8">
-          <Link href="/" className="grow z-10" onClick={() => setExpanded(false)}>
+          <Link
+            href="/"
+            className="grow z-10"
+            onClick={() => setExpanded(false)}
+          >
             <p className="font-bold">André Thiele</p>
           </Link>
           <button
@@ -41,7 +45,9 @@ export default function Navigation() {
             Menu
           </button>
         </div>
-        <div className={`${isExpanded ? "translate-y-50 opacity-100" : "-translate-y-full opacity-0" } bg-black border-b border-gray-800 absolute w-full px-8 transition duration-500 ease-in-out`}>
+        <div
+          className={`${isExpanded ? "translate-y-50 opacity-100" : "-translate-y-full opacity-0"} bg-black border-b border-gray-800 absolute w-full px-8 transition duration-500 ease-in-out`}
+        >
           <ul className="py-4">
             <li>
               <NavigationLinkMobile

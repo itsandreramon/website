@@ -16,9 +16,7 @@ export const metadata = {
 export default function Nexory() {
   return (
     <div className="max-w-4xl ftext-justify mx-auto">
-      <p className="text-4xl font-bold pt-32 pb-8 text-center">
-        Nexory
-      </p>
+      <p className="text-4xl font-bold pt-32 pb-8 text-center">Nexory</p>
       <Image src={home} />
       <MoreProjects>
         <ProjectPreviewTempory />
