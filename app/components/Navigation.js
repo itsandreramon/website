@@ -7,7 +7,7 @@ import Link from "next/link";
 import Socials from "./Socials";
 
 export default function Navigation() {
-  const [isExpanded, setExpanded] = useState(false);
+  const [isExpanded, setExpanded] = useState(true);
 
   return (
     <div>
@@ -29,19 +29,19 @@ export default function Navigation() {
         </div>
       </div>
       {/* "Mobile Nav" */}
-      <div className="border-b border-gray-800 lg:hidden visible fixed w-full bg-black z-10">
+      <div className="border-b border-gray-800 lg:hidden visible fixed w-full bg-black">
         <div className="flex flex-row items-center h-16 mx-8">
-          <Link href="/" className="grow" onClick={() => setExpanded(false)}>
+          <Link href="/" className="grow z-10" onClick={() => setExpanded(false)}>
             <p className="font-bold">André Thiele</p>
           </Link>
           <button
-            className="border-gray-800 items-center border-solid p-2 border-2 rounded-lg"
+            className="border-gray-800 items-center border-solid p-2 border-2 rounded-lg z-10 bg-black"
             onClick={() => setExpanded(!isExpanded)}
           >
             Menu
           </button>
         </div>
-        <div className={`${isExpanded ? "visible" : "hidden "} px-8`}>
+        <div className={`${isExpanded ? "translate-y-50 opacity-100" : "-translate-y-full opacity-0" } bg-black border-b border-gray-800 absolute w-full px-8 transition duration-500 ease-in-out`}>
           <ul className="py-4">
             <li>
               <NavigationLinkMobile

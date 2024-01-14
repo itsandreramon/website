@@ -19,9 +19,9 @@ export const metadata = {
 export default function Tempory() {
   return (
     <div className="text-justify mx-auto">
-      <p className="text-4xl font-bold text-center">Tempory</p>
-      <div className="text-center m-8 text-slate-400">
-        <a href="https://tempory.app/" className="pb-8" target="_blank">
+      <p className="text-4xl font-bold text-center pt-32">Tempory</p>
+      <div className="text-center text-slate-400 pb-8 pt-4">
+        <a href="https://tempory.app/" target="_blank">
           Website
         </a>
       </div>

@@ -19,7 +19,7 @@ export default function ProjectPreview(props) {
             src={props.src}
             alt=""
             quality={100}
-            className={`${isHovered ? "scale-125 grayscale-0 blur-none" : "scale-110 grayscale blur-sm"} h-64 w-full relative object-cover transition brightness-50 duration-500`}
+            className={`${isHovered ? "lg:scale-125 lg:grayscale-0 blur-none" : "lg:scale-110 lg:blur-sm"} grayscale h-64 w-full relative object-cover transition brightness-50 duration-500`}
           />
         </div>
         <p className="text-white -mb-8 text-2xl w-full text-center font-bold absolute inset-y-2/4 -translate-y-2/4 duration-500">

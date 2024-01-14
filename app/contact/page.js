@@ -1,6 +1,3 @@
-import Button from "../components/Button";
-import Image from "next/image";
-import contact from "../../public/contact.jpg";
 import ButtonMail from "../components/ButtonMail";
 
 export const metadata = {
