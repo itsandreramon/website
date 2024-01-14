@@ -8,9 +8,9 @@ export default function ProjectPreview(props) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <Link href={props.to} className="w-full">
+    <Link href={props.to}>
       <div
-        className="h-64 w-96 relative"
+        className="h-64 w-full lg:w-96 relative"
         onMouseOver={() => setIsHovered(true)}
         onMouseOut={() => setIsHovered(false)}
       >
