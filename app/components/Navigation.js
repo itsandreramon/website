@@ -10,7 +10,7 @@ export default function Navigation() {
   const [isExpanded, setExpanded] = useState(false);
 
   return (
-    <div>
+    <div className="z-10">
       {/* "Desktop Nav" */}
       <div className="fixed w-full lg:block hidden border-b border-gray-800 bg-black">
         <div className="flex flex-row items-center px-8 lg:h-32 lg:px-24">
@@ -46,7 +46,7 @@ export default function Navigation() {
           </button>
         </div>
         <div
-          className={`${isExpanded ? "translate-y-50 opacity-100" : "-translate-y-full opacity-0"} z-10 bg-black border-b border-gray-800 absolute w-full px-8 transition duration-500 ease-in-out`}
+          className={`${isExpanded ? "translate-y-50 opacity-100" : "-translate-y-full opacity-0"} bg-black border-b border-gray-800 absolute w-full px-8 transition duration-500 ease-in-out`}
         >
           <ul className="py-4">
             <li>
