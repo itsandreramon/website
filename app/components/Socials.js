@@ -19,6 +19,15 @@ export default function Socials() {
           }}
         />
       </a>
+      <a href="https://stackoverflow.com/users/10319730/andre-thiele" target="_blank">
+        <img
+          src="/stackoverflow.svg"
+          style={{
+            width: "auto",
+            height: "1.3rem",
+          }}
+        />
+      </a>
       <a href="https://www.x.com/itsandreramon" target="_blank">
         <img
           src="/x.svg"
