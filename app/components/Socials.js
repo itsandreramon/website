@@ -1,6 +1,6 @@
 export default function Socials() {
   return (
-    <div className="flex flex-row gap-8 lg:gap-4 items-center">
+    <div className="flex flex-row gap-4 items-center">
       <a href="https://www.github.com/itsandreramon" target="_blank">
         <img
           src="/github.svg"
